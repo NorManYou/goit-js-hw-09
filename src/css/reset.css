@@ -1,34 +1,19 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
+.badges-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
 }
-
-p:last-child {
-  margin-bottom: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  color: currentColor;
-  text-decoration: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-img {
+.badges-link {
   display: block;
-  max-width: 100%;
-  height: auto;
+  padding: 8px 16px;
+  border: 1px solid;
+  border-radius: 8px;
+  transition: 200ms ease-in;
+}
+.badges-link:hover,
+.badges-link:focus {
+  transform: scale(1.06);
+  color: #747bff;
 }
